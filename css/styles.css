@@ -7,8 +7,9 @@
 .navbar{
     display: flex;
     flex-direction: row;
+    align align-items: center;
     gap: 100px;
-    margin-right: 200px;
+    padding-right: 100px;
 }
 
 header {
