@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-right: 200px;
+}
+
+header {
+    display: flex; flex-direction: row;
+    align-items: center; justify-content: space-between;
+    border-bottom: 2px solid #03A055;
+    margin-bottom: 20px;
+}
+
+header a {
+    list-style: none;
+    text-decoration: none;
+    color: #03A055;
+    font-style: italic;
+    font-weight: bold; font-size: 42px;
+    margin: 20px;
+}
+
+.navbar li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li a{
+    color:#03A055; font-size: 28px;
+    font-weight: light;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 260px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #03a05441;
+}
+
+footer div p{
+    font-size: 28px;
+    font-style: italic; font-weight: 500;
+}
+
+.logositio {
+    color: #03A055; font-style: italic;
+    font-size: 42px; font-weight: bold;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+section h2 {
+    color: #03A055; font-size: 28px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 26px;
+}
+
+.servicios {
+    font-size: 18 px;
+    font-weight: 500;
+}
+
+.valores{
+    padding-bottom: 30px;
+}
+
+.valores ul li{
+    font-size: 26px;
+    list-style-type: disc;
+}
+
+.intro {
+    border-bottom: 2px solid #03A055;
+}
+
+.secciones section {
+    padding-top: 45px;
+    border-bottom: 2px solid #03A055;
+}
+
+.bottomsection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid #03A055;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #03a05470;
+    border: none; border-radius: 16px;
+    margin-top: 25px;margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 50px;
+}
+
+form label{
+    padding-top: 20px;
+}
+
+form div input {
+    padding: 10px;
+    background-color: #03a05470;
+    border: none; border-radius: 16px;
+    margin-top: 25px;margin-bottom: 25px;
+}
+
+
+
