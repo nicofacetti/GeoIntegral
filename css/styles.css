@@ -7,7 +7,7 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    align align-items: center;
+    align-items: center;
     gap: 100px;
     padding-right: 100px;
 }
