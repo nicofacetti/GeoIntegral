@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -17,6 +21,12 @@ header {
     align-items: center; justify-content: space-between;
     border-bottom: 2px solid #03A055;
     margin-bottom: 20px;
+    position: fixed; top: 0; width: 100%;
+    background-color: white;
+}
+
+main{
+    padding-top: 100px;
 }
 
 header a {
@@ -59,10 +69,26 @@ footer div p{
     font-size: 42px; font-weight: bold;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
+.mainindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.intro {
+    border-bottom: 2px solid #03A055;
+}
+
+.secciones section {
+    padding-top: 45px;
+    border-bottom: 2px solid #03A055;
+}
+
+.bottomsection {
+    padding-top: 45px;
+    border-bottom: 2px solid #03A055;
+    margin-bottom: 30px;
+}
 
 section h2 {
     color: #03A055; font-size: 24px;
@@ -114,34 +140,35 @@ section p {
     font-weight: 500;
 }
 
-.valores{
-    padding-bottom: 30px;
+.qsomos{
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 200px;
+    gap: 100px;
+    padding-right: 200px;
 }
+
+.mvv{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 200px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.mvv section{
+    width: 400px;
+}
+
+.mvv section p{
+    text-align: justify;
+}
+
 
 .valores ul li{
-    font-size: 26px;
+    font-size: 20px;
     list-style-type: disc;
-}
-
-.mainindex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.intro {
-    border-bottom: 2px solid #03A055;
-}
-
-.secciones section {
-    padding-top: 45px;
-    border-bottom: 2px solid #03A055;
-}
-
-.bottomsection {
-    padding-top: 45px;
-    border-bottom: 2px solid #03A055;
-    margin-bottom: 30px;
 }
 
 .subtitulo{
@@ -157,11 +184,20 @@ button {
     font-weight: bold;
 }
 
+.clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 200px 100px 500px;
+    gap: 100px;
+    width: 800px
+}
+
 form{
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding: 50px;
+    margin: 0px 200px 100px 500px;
 }
 
 form label{
@@ -174,6 +210,7 @@ form div input {
     border: none; border-radius: 16px;
     margin-top: 25px;margin-bottom: 25px;
 }
+
 
 
 
