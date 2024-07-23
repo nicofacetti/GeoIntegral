@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     gap: 100px;
-    padding-right: 100px;
+    margin-right: 250px;
 }
 
 header {
@@ -34,7 +34,7 @@ header a {
 }
 
 .navbar li a{
-    color:#03A055; font-size: 28px;
+    color:#03A055; font-size: 22px;
     font-weight: light;
 }
 
@@ -63,17 +63,54 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
 section h2 {
-    color: #03A055; font-size: 28px;
+    color: #03A055; font-size: 24px;
     font-weight: bold;
 }
 
 section p {
-    font-size: 26px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.servicios {
-    font-size: 18 px;
+.mainservicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 200px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 442px; width: 219px;
+    border: 2px solid #03A055;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px 0px gray;
+}
+
+#subt1{
+    padding-left: 10px;
+}
+
+#subt2{
+    padding-left: 10px;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 25px;
+}
+
+.card ul li {
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -84,6 +121,12 @@ section p {
 .valores ul li{
     font-size: 26px;
     list-style-type: disc;
+}
+
+.mainindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro {
@@ -97,9 +140,8 @@ section p {
 
 .bottomsection {
     padding-top: 45px;
-    padding-bottom: 45px;
     border-bottom: 2px solid #03A055;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .subtitulo{
@@ -111,7 +153,8 @@ button {
     padding: 10px;
     background-color: #03a05470;
     border: none; border-radius: 16px;
-    margin-top: 25px;margin-bottom: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 form{
