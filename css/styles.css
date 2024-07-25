@@ -106,27 +106,27 @@ section p {
 .mainservicios{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 100px 200px;
+    justify-content: space-evenly;
+    margin: 100px 0;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    justify-content: space-around;
     height: 442px; width: 219px;
     border: 2px solid #03A055;
     border-radius: 16px;
-    box-shadow: 5px 5px 5px 0px gray;
+    box-shadow: 5px 5px 5px  gray;
 }
 
 #subt1{
-    padding-left: 10px;
+    text-align: center;
 }
 
 #subt2{
-    padding-left: 10px;
+    text-align: center;
 }
 
 .card ul{
