@@ -11,14 +11,16 @@ body {
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     gap: 100px;
-    margin-right: 250px;
+    
 }
 
 header {
     display: flex; flex-direction: row;
-    align-items: center; justify-content: space-between;
+    align-items: center; 
+    justify-content: space-around;
     border-bottom: 2px solid #03A055;
     margin-bottom: 20px;
     position: fixed; top: 0; width: 100%;
@@ -45,7 +47,7 @@ header a {
 }
 
 .navbar li a{
-    color:#03A055; font-size: 22px;
+    color:#03A055; font-size: 20px;
     font-weight: light;
 }
 
@@ -261,7 +263,7 @@ form{
     flex-direction: column;
     flex-shrink: unset;
     width: 500px;
-    margin: 0 200px 200px 700px
+    justify-content: flex-start;
 }
 
 form label{
