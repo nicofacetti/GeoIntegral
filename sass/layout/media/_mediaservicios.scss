@@ -1,0 +1,27 @@
+@media (max-width:768px){
+    .mainservicios{
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 425px){
+    .card{
+        height: 340px; width: 170px;
+        border: 2px solid #03A055;
+        border-radius: 16px;
+        box-shadow: 5px 5px 5px  gray;
+        .card h2{
+            font-size: 16px;
+        }
+        .card ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 25px;
+            .card ul li {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    } 
+}

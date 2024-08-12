@@ -1,0 +1,86 @@
+@media (min-width:769px){
+    .headermobile{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    .navbar{
+        gap: 20px;
+        li{
+            a{
+                font-size: map-get($fontsize, f5);
+            }
+        } 
+    }
+}
+
+@media (max-width:1024px){
+    .headerdesktop{
+        flex-direction: column;
+        padding-bottom:30px;
+        gap: 15px;
+    }
+}
+
+@media (max-width:768px){
+    .headerdesktop{
+        display: none;
+    }
+    .hambmenu a {
+        color: #03a054;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        max-width: 200px;
+        font-size: map-get($fontsize, f6);
+        font-weight: bold;
+    }
+    
+    .hambmenu input[type="checkbox"], .hambmenu .ham1, .hambmenu .ham2 {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .hambmenu .ham1, .hambmenu .ham2 {
+        font-size: map-get($fontsize, f2);
+        pointer-events: none;
+    }
+    
+    .hambmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+    
+    .hambmenu {
+        background-image: url(../assets/img/logomini.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        border-bottom: 1px solid #03a054;
+        min-height: 48px;
+    }
+    
+    .hambmenu nav {
+        display: none;
+        background-image: none;
+    }
+    
+    .hambmenu input:checked ~ nav {
+        display: block;
+        background: white;
+    }
+    
+    .hambmenu input:checked ~ .ham1 {
+        display: none;
+    }
+    
+    .hambmenu input:not(:checked) ~ .ham2 {
+        display: none;
+    }
+}

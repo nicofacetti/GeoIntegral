@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: unset;
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    label{
+        padding-top: 20px;
+    }
+    input{
+        border-color: #03A055;
+    }
+    textarea{
+        border-color: #03A055;
+    }
+    div input {
+        padding: 10px;
+        background-color: #03a05470;
+        border: none; border-radius: 16px;
+        margin-top: 25px;margin-bottom: 25px;
+    }
+}

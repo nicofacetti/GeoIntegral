@@ -1,0 +1,50 @@
+@media (max-width: 768px){
+    
+    .qsomos{
+        margin-top: 10px;
+    } 
+    .mvv{
+        gap: 50px;
+        margin: 0px 0px; 
+        align-items: flex-start;
+    }
+    .subtitulo{
+        padding-top: 0;
+    }
+    .valores{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .qsomos{
+        margin-top: 0;
+        gap: 10px;
+    }
+    
+    .qsomos div p{
+        padding: 0px 20px
+    }
+    .subtitulo{
+        padding-top: 0;
+    }
+    .valores{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .qsomos{
+        margin-top: 0;
+        gap: 10px;
+    }
+    .qsomos div p{
+        padding: 0px 20px
+    }
+    .subtitulo{
+        padding-top: 0;
+    }
+    .valores{
+        margin-bottom: 20px;
+    }
+}
