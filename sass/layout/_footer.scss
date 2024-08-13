@@ -1,12 +1,7 @@
 footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex(row, wrap, space-evenly, center,5px)
     height: 260px;
     background-color: #03a05441;
-    gap: 5px;
     .logositio{
         color: #03A055; font-style: italic;
         font-size: 42px; font-weight: bold;

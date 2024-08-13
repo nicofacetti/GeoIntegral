@@ -14,9 +14,7 @@
             font-size: 16px;
         }
         .card ul{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+            @include flex (column, nowrap, none, none, 10px);            
             padding-left: 25px;
             .card ul li {
                 font-size: 16px;
