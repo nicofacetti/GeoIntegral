@@ -34,7 +34,7 @@
 
 
 .valores ul li{
-    font-size: 18px;
+    font-size: map-get($fontsize, f5);
     list-style-type: disc;
 }
 

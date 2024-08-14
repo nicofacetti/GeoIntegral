@@ -1,0 +1,10 @@
+@media (max-width: 768px){
+        .mainindex{
+            section{
+                p{
+                font-size: map-get($fontsize, f6);
+                text-align: center;
+            }
+        }
+    }
+}

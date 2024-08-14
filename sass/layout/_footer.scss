@@ -4,12 +4,14 @@ footer{
     background-color: #03a05441;
     .logositio{
         color: #03A055; font-style: italic;
-        font-size: 42px; font-weight: bold;
+        font-size: map-get($fontsize, f1); 
+        font-weight: bold;
     }
     div{
         p{
-            font-size: 24px;
-            font-style: italic; font-weight: 500;
+            font-size: map-get($fontsize, f4); 
+            font-style: italic; 
+            font-weight: 500;
         }
     }
 }

@@ -61,16 +61,31 @@ section h2 {
 .mainindex {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .mainindex .intro {
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: center;
+  gap: none; }
+  .mainindex #intro {
     border-bottom: 2px solid #03A055; }
-  .mainindex .secciones section {
-    padding-top: 45px;
+    .mainindex #intro div img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .mainindex .midsections section {
+    padding-top: 40px;
     border-bottom: 2px solid #03A055; }
-  .mainindex .secciones .bottomsection {
-    padding-top: 45px;
+    .mainindex .midsections section div img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .mainindex #bottomsection {
+    padding-top: 40px;
     border-bottom: 2px solid #03A055;
     margin-bottom: 30px; }
+    .mainindex #bottomsection div img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
 
 .qsomos {
   display: flex;
@@ -305,6 +320,11 @@ button {
     display: none; } }
 
 @media (max-width: 768px) {
+  .mainindex section p {
+    font-size: 16px;
+    text-align: center; } }
+
+@media (max-width: 768px) {
   .qsomos {
     margin-top: 10px; }
   .mvv {
@@ -321,11 +341,20 @@ button {
     margin-top: 0;
     gap: 10px; }
   .qsomos div p {
-    padding: 0px 20px; }
+    padding: 0px 20px;
+    font-size: 16px; }
   .subtitulo {
     padding-top: 0; }
   .valores {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .mvv section p {
+    font-size: 16px; }
+  .mvv section .valores ul li {
+    font-size: 16px; } }
+
+@media (max-width: 340px) {
+  .valores {
+    padding-left: 10px; } }
 
 @media (max-width: 320px) {
   .qsomos {
@@ -335,7 +364,7 @@ button {
     padding: 0px 20px; }
   .subtitulo {
     padding-top: 0; }
-  .valores {
+  .valores ul {
     margin-bottom: 20px; } }
 
 @media (max-width: 768px) {

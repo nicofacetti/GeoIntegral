@@ -23,13 +23,35 @@
     }
     
     .qsomos div p{
-        padding: 0px 20px
+        padding: 0px 20px;
+        font-size: map-get($fontsize, f6);
     }
     .subtitulo{
         padding-top: 0;
     }
     .valores{
         margin-bottom: 20px;
+    }
+
+    .mvv{
+        section{
+            p{
+                font-size: map-get($fontsize, f6);
+            }
+            .valores{
+                ul{
+                    li{
+                        font-size: map-get($fontsize, f6);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:340px){
+    .valores{
+        padding-left: 10px;
     }
 }
 
@@ -45,6 +67,8 @@
         padding-top: 0;
     }
     .valores{
-        margin-bottom: 20px;
+        ul{
+            margin-bottom: 20px;
+        }
     }
 }

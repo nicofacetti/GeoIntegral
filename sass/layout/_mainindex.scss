@@ -1,19 +1,38 @@
 .mainindex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .intro{
+    @include flex(column, nowrap, none, center, none)
+    #intro{
         border-bottom: 2px solid #03A055;
-    }
-    .secciones{
-        section{
-            padding-top: 45px;
-            border-bottom: 2px solid #03A055;
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
-    .bottomsection{
-        padding-top: 45px;
+    }
+    .midsections {
+        section{
+            padding-top: 40px;
+            border-bottom: 2px solid #03A055;
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    #bottomsection{
+        padding-top: 40px;
         border-bottom: 2px solid #03A055;
         margin-bottom: 30px;
+        div{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
     }    
     }
 }
