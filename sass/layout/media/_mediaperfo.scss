@@ -1,0 +1,82 @@
+@media (max-width: 880px){
+    .table-perfo {
+        font-size: map-get($fontsize, f4);
+        min-width: 200px;
+        tbody{
+          tr{
+            padding: 30px 37px;
+            td{padding: 30px 37px;
+            }  
+          }
+        }  
+      }
+}
+
+@media (max-width: 655px){
+    .table-perfo {
+        font-size: map-get($fontsize, f5);
+        min-width: 175px;
+        tbody{
+          tr{
+            padding: 30px 25px;
+            td{padding: 30px 30px;
+            }  
+          }
+        }  
+      }
+}
+
+@media (max-width: 610px){
+    .table-perfo {
+        font-size: map-get($fontsize, f5);
+        min-width: 150px;
+        tbody{
+          tr{
+            padding: 30px 20px;
+            td{padding: 30px 20px;
+            }  
+          }
+        }  
+      }
+}
+
+@media (max-width: 490px){
+    .table-perfo {
+        font-size: map-get($fontsize, f6);
+        min-width: 130px;
+        tbody{
+          tr{
+            padding: 20px 20px;
+            td{padding: 20px 20px;
+            }  
+          }
+        }  
+      }
+}
+
+@media (max-width: 410px){
+    .table-perfo {
+        min-width: 100px;
+        tbody{
+          tr{
+            padding: 25px 10px;
+            td{padding: 25px 10px;
+                text-align: center;
+            }  
+          }
+        }  
+      }
+}
+
+@media (max-width: 350px){
+    .table-perfo {
+        font-size: map-get($fontsize, f7);
+        tbody{
+          tr{
+            padding: 20px 5px;
+            td{padding: 20px 5px;
+            }  
+          }
+        }  
+      }
+}

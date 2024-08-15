@@ -1,6 +1,6 @@
 .txtclientes{
     text-align: center;
-    font-size: 24px;
+    font-size: map-get($fontsize, f4);
     margin-top: 15px;
     text-shadow: 1px 1px 1px  #03a054;
 }
@@ -33,7 +33,7 @@
         a{
             text-align: center;
             color: #03a054;
-            font-size: 24px;
+            font-size: map-get($fontsize, f4);
         }
     }
 }
