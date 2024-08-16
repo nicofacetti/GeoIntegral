@@ -1,11 +1,14 @@
 @media (max-width: 768px){
-    
     .qsomos{
-        margin-top: 10px;
-    } 
+        margin-top: 0;
+        .divimg{
+        padding-top: 0;
+        } 
+    }
+    
     .mvv{
         gap: 50px;
-        margin: 0px 0px; 
+        margin: 20px 0px; 
         align-items: flex-start;
     }
     .subtitulo{
@@ -16,14 +19,64 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 600px){
     .qsomos{
         margin-top: 0;
         gap: 10px;
+        div{
+            width: 530px;
+            height: 250px;
+        }
+    }
+    .qsomos{
+        .divimg{
+            padding-top: 0;
+            img{
+                object-fit: contain;
+            }
+        } 
+    }
+}
+
+@media (max-width: 480px){
+    .qsomos{
+        margin-top: 0;
+        gap: 10px;
+        div{
+            width: 550px;
+            height: 260px;
+        }
+    }
+    .qsomos{
+        .divimg{
+            padding-top: 0;
+            img{
+                object-fit: contain;
+            }
+        } 
+    }
+}
+
+@media (max-width: 435px){
+    .qsomos{
+        margin-top: 0;
+        gap: 10px;
+        div{
+            width: 410px;
+            height: 185px;
+        }
+    }
+    .qsomos{
+        .divimg{
+            padding-top: 0;
+            img{
+                object-fit: contain;
+            }
+        } 
     }
     
-    .qsomos div p{
-        padding: 0px 20px;
+    .qsomos .divp p{
+        padding: 0px 10px;
         font-size: map-get($fontsize, f6);
     }
     .subtitulo{
@@ -49,19 +102,13 @@
     }
 }
 
-@media (max-width:340px){
-    .valores{
-        padding-left: 10px;
-    }
-}
-
-@media (max-width:320px){
+@media (max-width:345px){
     .qsomos{
         margin-top: 0;
         gap: 10px;
     }
     .qsomos div p{
-        padding: 0px 20px
+        padding: 0px 10px
     }
     .subtitulo{
         padding-top: 0;
@@ -71,4 +118,8 @@
             margin-bottom: 20px;
         }
     }
+    .valores{
+        padding-left: 10px;
+    }
 }
+

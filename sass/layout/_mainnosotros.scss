@@ -1,44 +1,62 @@
 .qsomos{
-    @include flex (row, wrap, center, none, 50px)
+    @include flex (row, wrap, center, none, 30px)
     margin-top: 15px;
 }
 
 .qsomos div{
-    width: 565px;
-    height: 237px;
+    width: 590px;
+    height: 280px;
 }
 
-.qsomos div p{
-    text-align: justify;
-}
+.qsomos{
+    .divp{
+        border: 1px solid #03A055;
+        padding: 10px;
+        border-radius: 8px;
+        p{
+            text-align: justify;
+            font-size: map-get($fontsize, f5b);
+        }
+    } 
+} 
 
-.qsomos div img{
+.qsomos .divimg {
+    img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
+}
 
 .mvv{
-    @include flex (row, wrap, center, none, 100px)
-    margin: 80px 0px;
+    @include flex (row, wrap, center, none, 70px)
+    margin-bottom: 120px;
+    margin-top: 50px;
+    section{
+        width: 350px;
+        border: 1px solid #03A055;
+        padding: 10px;
+        border-radius: 8px;
+        .subtitulo{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: map-get($fontsize, f5b);
+            text-align: justify;
+            line-height: 1.5;
+        }
+    }
 }
 
-.mvv section{
-    width: 300px;
+.valores{
+    ul{
+        padding-left: 15px;
+        li{
+            font-size: map-get($fontsize, f5b);
+            list-style-type: disc;
+            line-height: 1.5;
+    }
+}  
 }
 
-.mvv section p{
-    text-align: justify;
-}
-
-
-.valores ul li{
-    font-size: map-get($fontsize, f5);
-    list-style-type: disc;
-}
-
-.subtitulo{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}

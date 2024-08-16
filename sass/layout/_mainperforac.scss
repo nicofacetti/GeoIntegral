@@ -9,7 +9,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     tbody{
       tr{
-        padding: 60px 75px;
+        padding: 60px 60px;
         border-bottom: 1px solid #dddddd;
         &:nth-of-type(even) {
           background-color: #f3f3f3;
@@ -17,7 +17,7 @@
         &:last-of-type {
             border-bottom: 2px solid #009879;
           }
-        td{padding: 60px 75px;
+        td{padding: 60px 60px;
         }  
       }
       .green-row {
@@ -26,5 +26,8 @@
       }
     }  
   }
+
+
+
   
   

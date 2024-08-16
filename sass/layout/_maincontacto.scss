@@ -1,10 +1,10 @@
 form{
-    display: flex;
-    flex-direction: column;
+    @include flex(column,nowrap,none,none,none);
     flex-shrink: unset;
     width: 500px;
     margin-left: 100px;
     margin-bottom: 200px;
+    margin-top: 150px;
     label{
         padding-top: 20px;
     }

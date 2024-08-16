@@ -15,7 +15,7 @@ section p {
   flex-direction: row;
   justify-content: center; }
 
-section h2 {
+section h1 {
   color: #03A055;
   font-size: 24px;
   font-weight: bold; }
@@ -93,17 +93,22 @@ section h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: none;
-  gap: 50px;
+  gap: 30px;
   margin-top: 15px; }
 
 .qsomos div {
-  width: 565px;
-  height: 237px; }
+  width: 590px;
+  height: 280px; }
 
-.qsomos div p {
-  text-align: justify; }
+.qsomos .divp {
+  border: 1px solid #03A055;
+  padding: 10px;
+  border-radius: 8px; }
+  .qsomos .divp p {
+    text-align: justify;
+    font-size: 22px; }
 
-.qsomos div img {
+.qsomos .divimg img {
   width: 100%;
   height: 100%;
   object-fit: contain; }
@@ -114,22 +119,28 @@ section h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: none;
-  gap: 100px;
-  margin: 80px 0px; }
+  gap: 70px;
+  margin-bottom: 120px;
+  margin-top: 50px; }
+  .mvv section {
+    width: 350px;
+    border: 1px solid #03A055;
+    padding: 10px;
+    border-radius: 8px; }
+    .mvv section .subtitulo {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .mvv section p {
+      font-size: 22px;
+      text-align: justify;
+      line-height: 1.5; }
 
-.mvv section {
-  width: 300px; }
-
-.mvv section p {
-  text-align: justify; }
-
-.valores ul li {
-  font-size: 18px;
-  list-style-type: disc; }
-
-.subtitulo {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+.valores ul {
+  padding-left: 15px; }
+  .valores ul li {
+    font-size: 22px;
+    list-style-type: disc;
+    line-height: 1.5; }
 
 .servilus img {
   width: 100%;
@@ -157,7 +168,7 @@ section h2 {
     border: 2px solid #03A055;
     border-radius: 16px;
     box-shadow: 5px 5px 5px  gray; }
-    .mainservicios .card h2 {
+    .mainservicios .card h1 {
       text-align: center;
       font-size: 24px; }
     .mainservicios .card ul {
@@ -220,10 +231,15 @@ section h2 {
 form {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   flex-shrink: unset;
   width: 500px;
   margin-left: 100px;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  margin-top: 150px; }
   form label {
     padding-top: 20px; }
   form input {
@@ -267,14 +283,14 @@ footer {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
   .table-perfo tbody tr {
-    padding: 60px 75px;
+    padding: 60px 60px;
     border-bottom: 1px solid #dddddd; }
     .table-perfo tbody tr:nth-of-type(even) {
       background-color: #f3f3f3; }
     .table-perfo tbody tr:last-of-type {
       border-bottom: 2px solid #009879; }
     .table-perfo tbody tr td {
-      padding: 60px 75px; }
+      padding: 60px 60px; }
   .table-perfo tbody .green-row {
     font-weight: bold;
     color: #009879; }
@@ -353,22 +369,55 @@ button {
 
 @media (max-width: 768px) {
   .qsomos {
-    margin-top: 10px; }
+    margin-top: 0; }
+    .qsomos .divimg {
+      padding-top: 0; }
   .mvv {
     gap: 50px;
-    margin: 0px 0px;
+    margin: 20px 0px;
     align-items: flex-start; }
   .subtitulo {
     padding-top: 0; }
   .valores {
     margin-bottom: 20px; } }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .qsomos {
     margin-top: 0;
     gap: 10px; }
-  .qsomos div p {
-    padding: 0px 20px;
+    .qsomos div {
+      width: 530px;
+      height: 250px; }
+  .qsomos .divimg {
+    padding-top: 0; }
+    .qsomos .divimg img {
+      object-fit: contain; } }
+
+@media (max-width: 480px) {
+  .qsomos {
+    margin-top: 0;
+    gap: 10px; }
+    .qsomos div {
+      width: 550px;
+      height: 260px; }
+  .qsomos .divimg {
+    padding-top: 0; }
+    .qsomos .divimg img {
+      object-fit: contain; } }
+
+@media (max-width: 435px) {
+  .qsomos {
+    margin-top: 0;
+    gap: 10px; }
+    .qsomos div {
+      width: 410px;
+      height: 185px; }
+  .qsomos .divimg {
+    padding-top: 0; }
+    .qsomos .divimg img {
+      object-fit: contain; }
+  .qsomos .divp p {
+    padding: 0px 10px;
     font-size: 16px; }
   .subtitulo {
     padding-top: 0; }
@@ -379,20 +428,18 @@ button {
   .mvv section .valores ul li {
     font-size: 16px; } }
 
-@media (max-width: 340px) {
-  .valores {
-    padding-left: 10px; } }
-
-@media (max-width: 320px) {
+@media (max-width: 345px) {
   .qsomos {
     margin-top: 0;
     gap: 10px; }
   .qsomos div p {
-    padding: 0px 20px; }
+    padding: 0px 10px; }
   .subtitulo {
     padding-top: 0; }
   .valores ul {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .valores {
+    padding-left: 10px; } }
 
 @media (max-width: 876px) {
   .mainservicios {
@@ -415,7 +462,7 @@ button {
     border: 2px solid #03A055;
     border-radius: 16px;
     box-shadow: 5px 5px 5px  gray; }
-    .card .card h2 {
+    .card .card h1 {
       font-size: 16px; }
     .card .card ul {
       display: flex;
@@ -443,7 +490,7 @@ button {
     .cardcontainer article a {
       font-size: 16px; } }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .cardcontainer article {
     width: 100px;
     height: 150px; }
@@ -456,6 +503,10 @@ button {
     height: 120px; }
     .cardcontainer article a {
       font-size: 16px; } }
+
+@media (max-width: 1024px) {
+  form {
+    margin-top: 20px; } }
 
 @media (max-width: 768px) {
   main {
