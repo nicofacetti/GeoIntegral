@@ -45,38 +45,38 @@
         font-size: map-get($fontsize, f6);
         min-width: 130px;
         tbody{
-          tr{
+        tr{
             padding: 20px 20px;
             td{padding: 20px 20px;
             }  
-          }
+        }
         }  
-      }
+    }
 }
 
 @media (max-width: 410px){
     .table-perfo {
         min-width: 100px;
         tbody{
-          tr{
+        tr{
             padding: 25px 10px;
             td{padding: 25px 10px;
                 text-align: center;
             }  
-          }
+        }
         }  
-      }
+    }
 }
 
 @media (max-width: 350px){
     .table-perfo {
         font-size: map-get($fontsize, f7);
         tbody{
-          tr{
+        tr{
             padding: 20px 5px;
             td{padding: 20px 5px;
             }  
-          }
+        }
         }  
-      }
+    }
 }

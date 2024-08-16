@@ -1,6 +1,21 @@
+@media (max-width:876px){
+    .mainservicios{
+        gap: 100px; 
+    }
+}
+
 @media (max-width:768px){
     .mainservicios{
-        gap: 20px; 
+        gap: 60px; 
+    }
+}
+
+@media (max-width:700px){
+    .servilus{
+        display: none;
+    }
+    .mainservicios{
+        margin-top: 5px;
     }
 }
 
@@ -17,7 +32,7 @@
             @include flex (column, nowrap, none, none, 10px);            
             padding-left: 25px;
             .card ul li {
-                font-size: 16px;
+                font-size: map-get($fontsize, f6);
                 font-weight: 500;
             }
         }
