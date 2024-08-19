@@ -13,13 +13,13 @@ a{
 }
 
 section p {
-    font-size: 20px;
+    font-size: map-get($fontsize, f5a);
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-section h1 {
+h1 {
     color: #03A055; 
     font-size: map-get($fontsize, f4);
     font-weight: bold;

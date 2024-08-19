@@ -15,7 +15,7 @@ section p {
   flex-direction: row;
   justify-content: center; }
 
-section h1 {
+h1 {
   color: #03A055;
   font-size: 24px;
   font-weight: bold; }
@@ -228,31 +228,37 @@ section h1 {
       color: #03a054;
       font-size: 24px; }
 
-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: none;
-  align-items: none;
-  gap: none;
-  flex-shrink: unset;
-  width: 500px;
-  margin-left: 100px;
-  margin-bottom: 200px;
-  margin-top: 150px; }
-  form label {
-    padding-top: 20px; }
-  form input {
-    border-color: #03A055; }
-  form textarea {
-    border-color: #03A055; }
-  form div input {
-    padding: 10px;
-    background-color: #03a05470;
-    border: none;
-    border-radius: 16px;
-    margin-top: 25px;
-    margin-bottom: 25px; }
+.maincontacto {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto; }
+  .maincontacto .contacto {
+    grid-column: 3/7; }
+    .maincontacto .contacto form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: none;
+      gap: none;
+      margin-top: 20px;
+      margin-bottom: 50px; }
+      .maincontacto .contacto form p {
+        border-bottom: 1px solid #03A055;
+        font-size: 18px;
+        padding-bottom: 5px; }
+      .maincontacto .contacto form label {
+        padding-top: 20px; }
+      .maincontacto .contacto form input {
+        border-color: #03A055; }
+      .maincontacto .contacto form textarea {
+        border-color: #03A055; }
+      .maincontacto .contacto form div input {
+        padding: 10px;
+        background-color: #03a05470;
+        border: none;
+        border-radius: 16px;
+        margin: 25px 0; }
 
 footer {
   display: flex;
@@ -273,26 +279,38 @@ footer {
     font-style: italic;
     font-weight: 500; }
 
-.table-perfo {
+.main-mas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: none; }
+  .main-mas h1 {
+    margin-top: 20px; }
+  .main-mas a button {
+    margin-bottom: 100px;
+    margin-left: 20px; }
+
+.table-mas {
   border-collapse: collapse;
   margin-top: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 24px;
-  min-width: 400px;
+  min-width: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
-  .table-perfo tbody tr {
+  .table-mas tbody tr {
     padding: 60px 60px;
     border-bottom: 1px solid #dddddd; }
-    .table-perfo tbody tr:nth-of-type(even) {
+    .table-mas tbody tr:nth-of-type(even) {
       background-color: #f3f3f3; }
-    .table-perfo tbody tr:last-of-type {
+    .table-mas tbody tr:last-of-type {
       border-bottom: 2px solid #009879; }
-    .table-perfo tbody tr td {
+    .table-mas tbody tr td {
       padding: 60px 60px; }
-  .table-perfo tbody .green-row {
-    font-weight: bold;
+  .table-mas tbody .green-row {
     color: #009879; }
 
 button {
@@ -300,7 +318,6 @@ button {
   background-color: #03a05470;
   border: none;
   border-radius: 16px;
-  margin-bottom: 25px;
   font-weight: bold; }
 
 @media (min-width: 769px) {
@@ -322,6 +339,8 @@ button {
 @media (max-width: 768px) {
   .headerdesktop {
     display: none; }
+  .headermobile {
+    box-shadow: 5px 5px 5px 0px gray; }
   .hambmenu a {
     color: #03a054;
     text-decoration: none;
@@ -453,7 +472,7 @@ button {
   .servilus {
     display: none; }
   .mainservicios {
-    margin-top: 5px; } }
+    margin-top: 15px; } }
 
 @media (max-width: 425px) {
   .card {
@@ -504,103 +523,78 @@ button {
     .cardcontainer article a {
       font-size: 16px; } }
 
-@media (max-width: 1024px) {
-  form {
-    margin-top: 20px; } }
-
 @media (max-width: 768px) {
-  main {
-    padding-top: 30px; } }
+  .maincontacto {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; }
+    .maincontacto .contacto {
+      grid-column: 2/6;
+      width: 80%;
+      justify-self: center; } }
 
-@media (max-width: 600px) {
-  main {
-    padding-top: 50px; }
-    main form {
-      width: 380px;
-      margin-left: 20px;
-      margin-bottom: 0px; } }
+@media (max-width: 650px) {
+  .maincontacto .contacto {
+    grid-column: 2/6;
+    width: 100%; } }
 
 @media (max-width: 425px) {
-  main {
-    padding-top: 50px; }
-    main form {
-      width: 360px;
-      margin-left: 20px;
-      margin-bottom: 0px; } }
-
-@media (max-width: 400px) {
-  form {
-    width: 300px; }
-    form div input {
-      margin-bottom: 100px; } }
-
-@media (max-width: 375px) {
-  main {
-    padding-top: 10px; }
-    main form {
-      width: 300px; }
-      main form div input {
-        margin-left: 100px; } }
-
-@media (max-width: 320px) {
-  main {
-    padding-top: 10px; }
-    main form {
-      width: 300px;
-      margin-left: 5px;
-      margin-bottom: 50px; }
-      main form div input {
-        margin-left: 140px; } }
+  .maincontacto {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+    .maincontacto .contacto {
+      grid-column: 1/3;
+      width: 80%;
+      justify-self: center; } }
 
 @media (max-width: 880px) {
-  .table-perfo {
+  .table-mas {
     font-size: 24px;
     min-width: 200px; }
-    .table-perfo tbody tr {
+    .table-mas tbody tr {
       padding: 30px 37px; }
-      .table-perfo tbody tr td {
+      .table-mas tbody tr td {
         padding: 30px 37px; } }
 
-@media (max-width: 655px) {
-  .table-perfo {
+@media (max-width: 690px) {
+  .table-mas {
     font-size: 18px;
     min-width: 175px; }
-    .table-perfo tbody tr {
+    .table-mas tbody tr {
       padding: 30px 25px; }
-      .table-perfo tbody tr td {
+      .table-mas tbody tr td {
         padding: 30px 30px; } }
 
 @media (max-width: 610px) {
-  .table-perfo {
+  .table-mas {
     font-size: 18px;
     min-width: 150px; }
-    .table-perfo tbody tr {
+    .table-mas tbody tr {
       padding: 30px 20px; }
-      .table-perfo tbody tr td {
+      .table-mas tbody tr td {
         padding: 30px 20px; } }
 
 @media (max-width: 490px) {
-  .table-perfo {
+  .table-mas {
     font-size: 16px;
-    min-width: 130px; }
-    .table-perfo tbody tr {
-      padding: 20px 20px; }
-      .table-perfo tbody tr td {
-        padding: 20px 20px; } }
+    min-width: 120px; }
+    .table-mas tbody tr {
+      padding: 20px 15px; }
+      .table-mas tbody tr td {
+        padding: 20px 15px; } }
 
 @media (max-width: 410px) {
-  .table-perfo {
+  .table-mas {
     min-width: 100px; }
-    .table-perfo tbody tr {
+    .table-mas tbody tr {
       padding: 25px 10px; }
-      .table-perfo tbody tr td {
+      .table-mas tbody tr td {
         padding: 25px 10px;
         text-align: center; } }
 
-@media (max-width: 350px) {
-  .table-perfo {
+@media (max-width: 370px) {
+  .table-mas {
     font-size: 14px; }
-    .table-perfo tbody tr {
+    .table-mas tbody tr {
       padding: 20px 5px; }
-      .table-perfo tbody tr td {
+      .table-mas tbody tr td {
         padding: 20px 5px; } }

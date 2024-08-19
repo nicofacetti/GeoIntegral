@@ -1,5 +1,5 @@
 @media (max-width: 880px){
-    .table-perfo {
+    .table-mas {
         font-size: map-get($fontsize, f4);
         min-width: 200px;
         tbody{
@@ -12,8 +12,8 @@
       }
 }
 
-@media (max-width: 655px){
-    .table-perfo {
+@media (max-width: 690px){
+    .table-mas {
         font-size: map-get($fontsize, f5);
         min-width: 175px;
         tbody{
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 610px){
-    .table-perfo {
+    .table-mas {
         font-size: map-get($fontsize, f5);
         min-width: 150px;
         tbody{
@@ -41,13 +41,13 @@
 }
 
 @media (max-width: 490px){
-    .table-perfo {
+    .table-mas {
         font-size: map-get($fontsize, f6);
-        min-width: 130px;
+        min-width: 120px;
         tbody{
         tr{
-            padding: 20px 20px;
-            td{padding: 20px 20px;
+            padding: 20px 15px;
+            td{padding: 20px 15px;
             }  
         }
         }  
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 410px){
-    .table-perfo {
+    .table-mas {
         min-width: 100px;
         tbody{
         tr{
@@ -68,8 +68,8 @@
     }
 }
 
-@media (max-width: 350px){
-    .table-perfo {
+@media (max-width: 370px){
+    .table-mas {
         font-size: map-get($fontsize, f7);
         tbody{
         tr{
