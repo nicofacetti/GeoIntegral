@@ -6,7 +6,7 @@
     }
 }
 .mainservicios{
-    @include flex (row, wrap, space-evenly, none, none)
+    @include flex (row, wrap, space-evenly, none, 25px)
     margin-bottom: 150px;
     margin-top: 50px;
     .card{
